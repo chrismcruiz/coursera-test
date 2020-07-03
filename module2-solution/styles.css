@@ -1,0 +1,90 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+h1 {
+    text-align: center;
+    margin: 40px auto 60px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75em;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    text-align: center;
+    width: 150px;
+}
+
+p {
+    width: 90%;
+    margin: 40px auto 0px auto;
+    font-size: 1.1em;
+}
+
+.row {
+    width: 100%;
+}
+
+section {
+    border: 1px solid black;
+    background-color: grey;
+    position: relative;
+    margin: auto 18px 23px 18px;
+    height: 190px;
+}
+
+.t1 {
+    background-color: orange;
+}
+
+.t2 {
+    background-color: red;
+    color: white;
+}
+
+.t3 {
+    background-color: white;
+}
+
+/* Media Querys */
+
+/* Desktop */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }    
+    
+}
+
